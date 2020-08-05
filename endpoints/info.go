@@ -27,7 +27,7 @@ func ServeInfoResource(
 	r.HandleFunc("/info/exchange", e.handleGetExchangeInfo)
 	r.HandleFunc("/info/operators", e.handleGetOperatorsInfo)
 	r.HandleFunc("/info/fees", e.handleGetFeeInfo)
-	r.HandleFunc("/stats/trading", e.handleGetTradingStats).Methods("GET")
+	r.HandleFunc("/stats/trading", e.handleGetTradingStats)
 	// r.HandleFunc("/stats/all", e.handleGetStats)
 	// r.HandleFunc("/stats/pairs", e.handleGetPairStats)
 }
